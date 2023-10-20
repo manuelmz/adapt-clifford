@@ -1,8 +1,14 @@
 # adapt-clifford
 
-The MaxCut problem asks to partition an undirected graph into two disjoint subsets as to maximize the number of edges connecting nodes on different subsets. If the graph is weighted, then the goal is to maximize the sum of edge weights across the partition.
+The MaxCut problem asks to partition the set of vertices of an undirected graph into two disjoint subsets as to maximize the sum of the weighted sum of the edges connecting nodes across the partition.
 
-ADAPT-Clifford was introduced in [ref], as a polynomial-time quantum-inspired algorithm which finds good approximate solutions to MaxCut. This repository provides several notebooks with an implementation of the algorithm dealing with MaxCut on different graph ensembles.
-In particular $K$-regular graps, Erdös-Rény graphs, and weighted complete graphs.
+ADAPT-Clifford is a quantum-inspired polynomial time algorithm for this problem. It aims at solving the problem by constructing an stabilizer state which encodes a good approximate cut of the graph under consideration, then a measurement in the computational basis returns a bitstring with the approximate cut.
+
+This new algorithm was introduced in [ref]. In this repository we provide three notebooks solving MaxCut with ADAPT-Clifford on three different type of graph ensembles.
+
+In particular:
+- $K$-regular graps
+- Erdös-Rény graphs
+- weighted complete graphs.
 
 
